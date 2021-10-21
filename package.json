@@ -1,0 +1,27 @@
+{
+  "name": "first-node-project",
+  "version": "1.0.0",
+  "description": "First try at making a node express mongo project",
+  "main": "index.js",
+  "author": "Griselle A Jimenez Ruiz",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11",
+    "typescript": "^4.4.4",
+    "nodemon": "^2.0.14"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently \"tsc -w\" \"nodemon dist/js/app.js\""
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.11.1",
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14"
+  }
+}
