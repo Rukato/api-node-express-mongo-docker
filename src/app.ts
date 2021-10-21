@@ -12,6 +12,8 @@ app.use(express.json());
 app.use(menuRoutes);
 
 const uri: string = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.vmx7a.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
+console.log(uri);
+
 mongoose
     .connect(uri)
     .then(() =>

@@ -13,6 +13,7 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use(routes_1.default);
 const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.vmx7a.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
+console.log(uri);
 mongoose_1.default
     .connect(uri)
     .then(() => app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`)))
