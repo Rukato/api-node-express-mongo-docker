@@ -1,4 +1,4 @@
-import { IMenu } from "../types/IMenu"
+import { IMenu } from "../types/menu"
 import { model, Schema } from "mongoose"
 
 const menuSchema: Schema = new Schema(

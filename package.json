@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "First try at making a node express mongo project",
   "main": "index.js",
-  "author": "Griselle A Jimenez Ruiz",
+  "author": "Griselle A. Jimenez Ruiz",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
